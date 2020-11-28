@@ -17,6 +17,11 @@ app.get("/api", (req, res) => {
   res.send({ message })
 })
 
+app.get("/api2", (req, res) => {
+  const message = "Hello World API2!!"
+  res.send({ message })
+})
+
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
